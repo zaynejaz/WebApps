@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap");
+
+html {
+  margin: 0rem 12.5rem 0 12.5rem;
+}
+
+body {
+  background: #303e80;
+  /* older browsers */
+  background: -webkit-linear-gradient(to right, #303e80, #303e80);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #303e80, #303e80);
+  /* Chrome 26+, Firefox 16+, IE 10+/ Edge, Opera 12+, Safari 7+, W3C */
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+/* BOOK CONTENT STARTS */
+#book-text {
+  z-index: 0;
+}
+
+.card {
+  margin: 0 20rem;
+  height: 100vh;
+}
+
+.displayBox {
+  width: 100%;
+  font-family: Helvetica, Arial, Verdana, Geneva, Tahoma, sans-serif;
+  color: #151515;
+}
+
+.scroll-box {
+  overflow-y: auto;
+  height: 100%;
+  float: left;
+  padding: 0 2rem;
+}
+
+/* BOOK CONTENT ENDS */
+
+.card-footer a span {
+  color: #444444 !important;
+  font-size: 0.5rem;
+  text-decoration: none !important;
+}
+
+.card-footer a:hover {
+  text-decoration: none !important;
+}
+.card-footer a:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.card-footer img {
+  height: 2rem;
+  width: auto;
+  transition: all 0.2s ease-in-out;
+}

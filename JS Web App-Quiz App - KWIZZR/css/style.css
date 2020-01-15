@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px !important;
+  font-weight: normal !important;
+  width: 100%;
+  height: 100vh;
+
+  background: rgb(20, 30, 48);
+  background: linear-gradient(
+    0deg,
+    rgba(20, 30, 48, 1) 0%,
+    rgba(36, 59, 85, 1) 100%
+  );
+  overflow: hidden;
+}
+
+.grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+
+  background: rgb(20, 30, 48);
+  background: linear-gradient(
+    0deg,
+    rgba(36, 59, 85, 1) 0%,
+    rgba(20, 30, 48, 1) 100%
+  );
+
+  padding: 0.5rem 3rem 1rem 3rem;
+}
+
+.grid h1 {
+  text-align: center;
+}
+
+.logo-letters {
+  display: inline;
+}
+
+.grid img {
+  height: 50px;
+  width: auto;
+  margin: 0 !important;
+  padding: 0;
+  filter: grayscale(100);
+}
+
+#score {
+  color: #00ff00;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid #question {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.buttons {
+  margin: 0rem auto;
+}
+
+button {
+  border: none;
+}
+
+#btn0,
+#btn1,
+#btn2,
+#btn3 {
+  display: block;
+  background-color: rgba(20, 30, 48, 1);
+
+  min-width: 250px;
+  width: auto;
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0.5rem auto;
+  padding: 0.7rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+#btn0:hover,
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
+  background-color: rgba(36, 59, 85, 1);
+
+  transition: all 0.4s ease-in-out;
+}
+
+#btn0:focus,
+#btn1:focus,
+#btn2:focus,
+#btn3:focus {
+  outline: none;
+}
+
+footer {
+  text-align: center;
+}
+#progress {
+  color: #ffffff80;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 0rem auto;
+}
+
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: normal;
+}

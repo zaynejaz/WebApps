@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap");
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+nav {
+  background-color: #303e80 !important;
+}
+
+nav.navbar {
+  -webkit-box-shadow: 0px 0px 19px 3px rgba(31, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 19px 3px rgba(31, 31, 31, 0.75);
+  box-shadow: 0px 0px 19px 3px rgba(31, 31, 31, 0.75);
+}
+
+nav .navbar-brand img {
+  width: 100%;
+  height: auto;
+}
+
+/* NAVBAR STARTS */
+.logo {
+  width: 100%;
+  height: auto;
+}
+.responsive {
+  max-width: 100%;
+  height: 80px;
+}
+
+.navbar-scrollable {
+  height: auto;
+  max-height: 100vh;
+  /* overflow-y: scroll; */
+}
+
+img {
+  padding: 0px;
+}
+
+h6 {
+  font-weight: normal !important;
+}
+
+/* book select */
+.dropdown-toggle {
+  margin-top: 1rem;
+}
+
+.dropdown-toggle::after {
+  position: relative;
+  display: inline-block !important;
+  float: left !important;
+  left: 60% !important;
+  top: -1.4rem;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 25rem;
+  overflow-x: hidden;
+}
+
+.dropdown-menu {
+  background: #303e80 !important;
+}
+
+.dropdown-item p {
+  color: #ffffff !important;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item p:hover {
+  color: #15c5ee !important;
+}
+
+/* book select */
+
+/* book search */
+.nav-item .input-group-btn button {
+  border: none !important;
+  background: #15c5ee;
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.nav-item .input-group input {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: #ffffff;
+}
+
+.nav-item .input-group-btn button .fas {
+  color: #303e80;
+  position: relative;
+  float: left;
+  right: 50%;
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item .input-group-btn button:hover .fas {
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-nav.left-right {
+  display: inline-block !important;
+  float: right !important;
+  padding: 0;
+  margin: 3rem 0 0 0;
+}
+
+.navbar-nav.left-right .nav-item.nav-left,
+.nav-right {
+  width: 4rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar-nav.left-right .nav-item.nav-left {
+  float: left !important;
+}
+
+.navbar-nav.left-right .nav-item.nav-right {
+  float: right !important;
+}

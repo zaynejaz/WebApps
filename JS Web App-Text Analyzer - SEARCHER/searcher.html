@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+    <title>SEARCHER | Discover</title>
+
+    <link rel="stylesheet" id="theme_link"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.min.css" />
+
+    <link rel="icon" href="/JS Web App-Text Analyzer - SEARCHER/assets/favicon.ico" type="image/gif" sizes="16x16">
+
+    <link rel='stylesheet' href='/JS Web App-Text Analyzer - SEARCHER/css/style.css'>
+    <link rel="stylesheet" href="/JS Web App-Text Analyzer - SEARCHER/css/navbar-fixed-right.min.css">
+    <link rel="stylesheet" href="/JS Web App-Text Analyzer - SEARCHER/css/navbar-fixed-left.min.css">
+    <link rel="stylesheet" href="/JS Web App-Text Analyzer - SEARCHER/css/docs.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap" rel="stylesheet">
+
+    <!-- JAVASCRIPT -->
+    <script src="/JS Web App-Text Analyzer - SEARCHER/js/SearchString.js"></script>
+    <script src="/JS Web App-Text Analyzer - SEARCHER/js/docs.js"></script>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/9664c8b16b.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- JS BUTTONS -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-scrollable">
+            <a class="navbar-brand" href="#">
+                <img src="/JS Web App-Text Analyzer - SEARCHER/assets/searcher-logo-full.svg" alt="search full logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav">
+
+                    <!-- BOOK SELECT START-->
+                    <div class="btn-group">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <h6>Select a Book</h6>
+                            </a>
+                            <!-- BOOKS LIBRARY -->
+                            <ul class="dropdown-menu scrollable-menu" role="menu">
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('AdventuresofHuckleberryFinn.txt','Adventures of Huckleberry Finn')">
+                                    <p>Adventures
+                                        of Huckleberry Finn</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('AlicesAdventuresinWonderland.txt','Alices Adventures in Wonderland')">
+                                    <p>Alices
+                                        Adventures in Wonderland</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('ATaleofTwoCities.txt','A Tale of Two Cities')">
+                                    <p>A Tale of Two
+                                        Cities</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#" onclick="loadBook('Dracula.txt','Dracula')">
+                                    <p>Dracula</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#" onclick="loadBook('Frankenstein.txt','Frankenstein')">
+                                    <p>Frankenstein</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('GreatExpectations.txt','Great Expectations')">
+                                    <p>Great
+                                        Expectations</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#" onclick="loadBook('Hamlet.txt','Hamlet')">
+                                    <p>Hamlet</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#" onclick="loadBook('Ion.txt','Ion')">
+                                    <p>Ion</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('LesMiserables.txt','Les Miserables')">
+                                    <p>Les
+                                        Miserables</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#" onclick="loadBook('MobyDick.txt','Moby Dick')">
+                                    <p>Moby
+                                        Dick</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#" onclick="loadBook('OliverTwist.txt','Oliver Twist')">
+                                    <p>Oliver
+                                        Twist</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('PrideandPrejudice.txt','Pride and Prejudice')">
+                                    <p>Pride and
+                                        Prejudice</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('TheAdventuresofSherlockHolmes.txt','The Adventures of Sherlock Holmes')">
+                                    <p>The
+                                        Adventures of Sherlock Holmes</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('TheBookofWar.txt','The Book of War')">
+                                    <p>The
+                                        Book
+                                        of War</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('TheCountofMonteCristo.txt','The Count of Monte Cristo')">
+                                    <p>The
+                                        Count of Monte Cristo</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('TheKamaSutraofVatsyayana.txt','The Kama Sutra of Vatsyayana')">
+                                    <p>The
+                                        Kama Sutra of Vatsyayana</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('ThePictureofDorianGray.txt','The Picture of Dorian Gray')">
+                                    <p>The
+                                        Picture of Dorian Gray</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('TheStrangeCaseofDrJekyllandMrHyde.txt','The Strange Case of Dr Jekyll and Mr Hyde')">
+                                    <p>The Strange Case of Dr Jekyll and Mr Hyde</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('TheWonderfulWizardofOz.txt','The Wonderful Wizard of Oz')">
+                                    <p>The
+                                        Wonderful Wizard of Oz</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#"
+                                    onclick="loadBook('TreasureIsland.txt','Treasure Island')">
+                                    <p>Treasure Island</p>
+                                </a>
+
+                                <a class="dropdown-item" href="#" onclick="loadBook('Ulysses.txt','Ulysses')">
+                                    <p>Ulysses</p>
+                                </a>
+                            </ul>
+                        </li>
+                    </div>
+                    <!-- BOOK SELECT END-->
+
+                    <!-- SEARCH START-->
+                    <li class="nav-item">
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="keyword" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" onclick="performPick()"><i
+                                        class="fas fa-search" aria-hidden="true"></i></button>
+                            </span>
+
+                        </div>
+                        <div class="card-footer" id="searchstat"></div>
+                    </li>
+                    <!-- SEARCH END-->
+
+                    <!-- MOST USED START-->
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <h6>Words Most Used</h6>
+                            <ul class="list-unstyled mb-0" id="mostUsed">
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- MOST USED END-->
+
+                    <!-- LEAST USED START-->
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <h6>Words Least Used</h6>
+                            <ul class="list-unstyled mb-0" id="leastUsed">
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- LEAST USED END-->
+
+                    <!-- BOOK STATS START-->
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <h6>Book Stats</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li id="docLength"></li>
+                                <li id="wordCount"></li>
+                                <li id="charCount"></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- BOOK STATS END-->
+
+                </ul>
+
+                <!-- NAVBAR POSITION START -->
+                <ul class="navbar-nav container left-right">
+                    <li class="nav-item nav-left">
+                        <a class="nav-link col" data-class="fixed-left">
+                            <i class="fa fa-arrow-left"></i>
+                            Left
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-right">
+                        <a class="nav-link col" data-class="fixed-right">
+                            Right
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- NAVBAR POSITION END-->
+
+            </div>
+        </nav>
+
+        <!-- BOOK CONTENT AREA STARTS -->
+        <div id="book-text" class="container-fluid ">
+            <div class="align-items-center ">
+                <div class="card mx-auto">
+                    <h2 class="card-header" id="fileName">Book Title</h2>
+                    <div class="card-body">
+                        <div class="displayBox scroll-box" id="fileContent">
+                            Please Select a Book
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-center">
+
+                        <a href="www.zaynejaz.com" target="_blank">
+
+                            <span class="ml-1">Z<img src="/JS Web App-Text Analyzer - SEARCHER/assets/ZE-logo-blu.png"
+                                    alt="">E</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main Content Area-->
+
+
+        <!-- BOOK CONTENT AREA ENDS -->
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/script.js"></script>
+
+    <script id="template-ul-items" type="text/template">
+            <li>
+               {{val}}
+            </li>    
+    </script>
+    <!-- jQUERY POPPER.js BOOTSTRAP-JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
