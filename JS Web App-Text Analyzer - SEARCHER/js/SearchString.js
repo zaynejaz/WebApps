@@ -1,7 +1,7 @@
 //LOAD doc
 function loadBook(filename, displayName) {
     let currentBook = "";
-    let url = "/JS Web App-Text Analyzer - SEARCHER/assets/books/" + filename;
+    let url = "./assets/books/" + filename;
 
     //RESET UI 
     document.getElementById("fileName").innerHTML = displayName;
